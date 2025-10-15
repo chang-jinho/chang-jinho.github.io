@@ -22,14 +22,14 @@
                 <p class="name" style="text-align: center;">
                   Jinho Chang
                 </p>
-                <p>Ph.D. student in KAIST, currently a member of the <a href="https://bispl.weebly.com/">BioImaging-Signal Processing & Learning Lab(BISPL)</a>. I am interested in diffusion models for their score function applications and sampling optimization, and multi-modal models for informative representations and cross-modal generation.
+                <p>I'm Jinho Chang, currently a Ph.D. student at KAIST and a member of <a href="https://bispl.weebly.com/">BioImaging-Signal Processing & Learning Lab(BISPL)</a>.
                 </p>
                 <p>
-                  Also, leveraging my chemistry background, I aim to apply state-of-the-art AI techniques to various important chemical challenges with minimal adaptation costs.
+                  I'm working on the applications on continuous/discrete diffusion and flow-matching models with their various inference-time guidance and alignment methods, including reward-guided editing, negative sampling, score distillation, etc. Also, leveraging my chemistry background, I aim to solve diverse molecular tasks that are hard to be solved in principle, including conditional molecule design and editing, synthesizability and retro-synthesis prediction, intrinsic property prediction, etc. 
                 </p>
                 <p style="text-align:center">
                   <a href="jinhojsk515@kaist.ac.kr">Email</a> &nbsp;/&nbsp;
-                  <a href="data/Jinho_Chang___Curriculum_Vitae.pdf">CV</a> &nbsp;/&nbsp;
+                  <a href="data/Jinho_Chang_Curriculum_Vitae.pdf">CV</a> &nbsp;/&nbsp;
                   <a href="https://scholar.google.com/citations?hl=en&user=GrHZicUAAAAJ">Scholar</a> &nbsp;/&nbsp;
                   <a href="http://www.linkedin.com/in/jinho-chang-09a2a1284">LinkedIn</a> &nbsp;/&nbsp;
                   <a href="https://github.com/jinhojsk515/">Github</a>
@@ -55,43 +55,40 @@
 
 
 
-
 		  
-
-    <tr onmouseout="ccfg_stop()" onmouseover="ccfg_start()">
+    <tr onmouseout="itoc_stop()" onmouseover="itoc_start()">
       <td style="padding:16px;width:20%;vertical-align:middle">
         <div class="one">
-          <div class="two" id='ccfg_image'>
-					  <img src='images/ccfg.png' width=100%>
+          <div class="two" id='itoc_image'>
+					  <img src='images/itoc.png' width=100%>
 					</div>
-          <img src='images/ccfg.png' width=100%>
+          <img src='images/itoc.png' width=100%>
         </div>
         <script type="text/javascript">
-          function ccfg_start() {
-            document.getElementById('ccfg_image').style.opacity = "1";
+          function itoc_start() {
+            document.getElementById('itoc_image').style.opacity = "1";
           }
 
-          function ccfg_stop() {
-            document.getElementById('ccfg_image').style.opacity = "0";
+          function itoc_stop() {
+            document.getElementById('itoc_image').style.opacity = "0";
           }
-          ccfg_stop()
+          ldmol_stop()
         </script>
       </td>
       <td style="padding:8px;width:80%;vertical-align:middle">
-			<span class="papertitle">Contrastive CFG: Improving CFG in Diffusion Models by Contrasting Positive and Negative Concepts
+			<span class="papertitle">Training-Free Reward-Guided Image Editing via Trajectory Optimal Control
 </span>
         <br>
-				<strong>Jinho Chang</strong>*, Hyungjin Chung, Jong Chul Ye
-        <br>
-        <em>arXiv</em>, 2024
-        <a href="https://arxiv.org/abs/2411.17077">Link</a>
+				<strong>Jinho Chang</strong>*, Jaemin Kim, Jong Chul Ye
+				<br>
+        <em>arXiv</em>, 2025
+        <a href="https://www.arxiv.org/abs/2509.25845">Link</a>
         <p></p>
         <p>
-				We point out the drawback of naively negating the Classifier-Free Guidance (CFG) term, and propose a novel approach to enhance negative CFG in conditional diffusion models using contrastive loss. By aligning or repelling the denoising direction based on the given condition, our method overcomes the distortions caused by traditional negative CFG, achieving superior sample quality and effective removal of unwanted features across various scenarios.
+				Prior reward-guided sampling methods in diffusion/flow-matching largely focused on the generation task and remain underexplored for image editing. We propose a training-free editing framework that casts the reward-guided editing as a trajectory optimal control problem, and iteratively updates adjoint states to steer the trajectory endpoint into a reward-optimized output. Our method surpasses inversion-based training-free guidance baselines across diverse editing tasks, achieving stronger rewards with higher source image fidelity without reward hacking.
         </p>
       </td>
     </tr>
-
 
 
 
@@ -131,6 +128,43 @@
       </td>
     </tr>
 
+
+			  
+		  
+
+    <tr onmouseout="ccfg_stop()" onmouseover="ccfg_start()">
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='ccfg_image'>
+					  <img src='images/ccfg.png' width=100%>
+					</div>
+          <img src='images/ccfg.png' width=100%>
+        </div>
+        <script type="text/javascript">
+          function ccfg_start() {
+            document.getElementById('ccfg_image').style.opacity = "1";
+          }
+
+          function ccfg_stop() {
+            document.getElementById('ccfg_image').style.opacity = "0";
+          }
+          ccfg_stop()
+        </script>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+			<span class="papertitle">Contrastive CFG: Improving CFG in Diffusion Models by Contrasting Positive and Negative Concepts
+</span>
+        <br>
+				<strong>Jinho Chang</strong>*, Hyungjin Chung, Jong Chul Ye
+        <br>
+        <em>arXiv</em>, 2024
+        <a href="https://arxiv.org/abs/2411.17077">Link</a>
+        <p></p>
+        <p>
+				We point out the drawback of naively negating the Classifier-Free Guidance (CFG) term, and propose a novel approach to enhance negative CFG in conditional diffusion models using contrastive loss. By aligning or repelling the denoising direction based on the given condition, our method overcomes the distortions caused by traditional negative CFG, achieving superior sample quality and effective removal of unwanted features across various scenarios.
+        </p>
+      </td>
+    </tr>
 
 
 
@@ -370,6 +404,46 @@
 
 
 
+			          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+              <tr>
+              <td style="padding:16px;width:100%;vertical-align:middle">
+                <h2>Reviewer participation</h2>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+      <td style="padding:8px;width:100%;vertical-align:middle">
+			<span class="papertitle"><strong>Nature Communications</strong> &nbsp;&nbsp; 2024 ~
+</span>
+      </td>
+    </tr>
+
+      <td style="padding:8px;width:100%;vertical-align:middle">
+			<span class="papertitle"><strong>Communications Chemistry</strong> &nbsp;&nbsp; 2024 ~
+</span>
+      </td>
+    </tr>
+
+      <td style="padding:8px;width:100%;vertical-align:middle">
+			<span class="papertitle"><strong>International Conference on Learning Representations</strong> &nbsp;&nbsp; 2025, 2026
+</span>
+      </td>
+    </tr>
+
+      <td style="padding:8px;width:100%;vertical-align:middle">
+			<span class="papertitle"><strong>Conference on Computer Vision and Pattern Recognition</strong> &nbsp;&nbsp; 2025
+</span>
+      </td>
+    </tr>
+
+      <td style="padding:8px;width:100%;vertical-align:middle">
+			<span class="papertitle"><strong>International Conference on Computer Vision</strong> &nbsp;&nbsp; 2025
+</span>
+      </td>
+    </tr>
+
+
 
 
 
@@ -418,7 +492,7 @@
               <td style="padding:0px">
                 <br>
                 <p style="text-align:right;font-size:small;">
-                  Last update: Dec 11, 2024
+                  Last update: Oct 15, 2025
                 </p>
               </td>
             </tr>
