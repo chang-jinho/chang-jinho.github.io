@@ -54,129 +54,8 @@
 
 
 
-<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-              <tr>
-              <td style="padding:-4px;width:100%;vertical-align:middle">
-                <h4>Generative models for chemistry.</h4>
-              </td>
-            </tr>
-          </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-
-
-
-
-		  
-    <tr onmouseout="ldmol_stop()" onmouseover="ldmol_start()">
-      <td style="padding:16px;width:20%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='ldmol_image'>
-					  <img src='images/ldmol.png' width=100%>
-					</div>
-          <img src='images/ldmol.png' width=100%>
-        </div>
-        <script type="text/javascript">
-          function ldmol_start() {
-            document.getElementById('ldmol_image').style.opacity = "1";
-          }
-
-          function ldmol_stop() {
-            document.getElementById('ldmol_image').style.opacity = "0";
-          }
-          ldmol_stop()
-        </script>
-      </td>
-      <td style="padding:8px;width:80%;vertical-align:middle">
-			<span class="papertitle">LDMol: Text-Conditioned Molecule Diffusion Model Leveraging Chemically Informative Latent Space
-</span>
-        <br>
-				<strong>Jinho Chang</strong>*, Jong Chul Ye
-				<br>
-        <em>ICML</em>, 2025
-        <a href="https://arxiv.org/abs/2405.17829">Link</a>
-        <p></p>
-        <p>
-				We present a new latent diffusion model LDMol for molecule generation with complex conditions like natural texts. Leveraging a chemically informative latent space obtained with contrastive learning, LDMol not only outperforms previous text-to-molecule generative models, but can also be applied to downstream tasks like retrieval and molecule editing.
-        </p>
-      </td>
-    </tr>
-
-
-
-		  
-    <tr onmouseout="spmm_stop()" onmouseover="spmm_start()">
-      <td style="padding:16px;width:20%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='spmm_image'>
-					  <img src='images/spmm.png' width=100%>
-					</div>
-          <img src='images/spmm.png' width=100%>
-        </div>
-        <script type="text/javascript">
-          function spmm_start() {
-            document.getElementById('spmm_image').style.opacity = "1";
-          }
-
-          function spmm_stop() {
-            document.getElementById('spmm_image').style.opacity = "0";
-          }
-          spmm_stop()
-        </script>
-      </td>
-      <td style="padding:8px;width:80%;vertical-align:middle">
-			<span class="papertitle">Bidirectional Generation of Structure and Properties Through a Single Molecular Foundation Model
-</span>
-        <br>
-				<strong>Jinho Chang</strong>*, Jong Chul Ye
-
-        <br>
-        <em>Nature Communications</em>, 2024
-        <a href="https://www.nature.com/articles/s41467-024-46440-3">Link</a>
-        <p></p>
-        <p>
-				We introduce a multimodal molecular pre-trained model that integrates molecular structures and their biochemical properties, which enables various multimodal and unimodal tasks like conditional molecule generation, property prediction, molecule classification, and reaction prediction.
-        </p>
-      </td>
-    </tr>
-
-
-
-
-    <tr onmouseout="deepdl_stop()" onmouseover="deepdl_start()">
-      <td style="padding:16px;width:20%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='deepdl_image'>
-					  <img src='images/deepdl.png' width=100%>
-					</div>
-          <img src='images/deepdl.png' width=100%>
-        </div>
-        <script type="text/javascript">
-          function deepdl_start() {
-            document.getElementById('deepdl_image').style.opacity = "1";
-          }
-
-          function deepdl_stop() {
-            document.getElementById('deepdl_image').style.opacity = "0";
-          }
-          deepdl_stop()
-        </script>
-      </td>
-      <td style="padding:8px;width:80%;vertical-align:middle">
-          <span class="papertitle">Drug-likeness Scoring Based on Unsupervised Learning
-</span>
-        <br>
-				Kyunghoon Lee*, <strong>Jinho Chang</strong>*, Seonghwan Seo*, and Woo Youn Kim	
-        <br>
-        <em>Chemical Science</em>, 2022
-        <a href="https://pubs.rsc.org/en/content/articlehtml/2022/sc/d1sc05248a">Link</a>
-        <p></p>
-        <p>
-        We proposed a novel unsupervised learning model that could quantify the drug-likeness of a given molecule, by adopting a language model trained via unsupervised learning. Our model showed more consistent performance across different datasets and gave more reasonable scores.
-        </p>
-      </td>
-    </tr>
-
+			  
         
 
 <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
@@ -189,7 +68,48 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
 
-		  
+			  
+
+
+    <tr onmouseout="rsm_stop()" onmouseover="rsm_start()">
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='rsm_image'>
+					  <img src='images/rsm.png' width=100%>
+					</div>
+          <img src='images/rsm.png' width=100%>
+        </div>
+        <script type="text/javascript">
+          function itoc_start() {
+            document.getElementById('rsm_image').style.opacity = "1";
+          }
+
+          function itoc_stop() {
+            document.getElementById('rsm_image').style.opacity = "0";
+          }
+          ldmol_stop()
+        </script>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+			<span class="papertitle">Training-Free Reward-Guided Image Editing via Trajectory Optimal Control
+</span>
+        <br>
+				Jeongjae Lee*, <strong>Jinho Chang</strong>*, Jeongsol Kim, Jong Chul Ye
+				<br>
+        <em>ICML workshop</em>, 2026
+        <a href="https://arxiv.org/abs/2604.17415">Link</a>
+        <p></p>
+        <p>
+				We unify reward-based fine-tuning methods for diffusion and flow models under reward score matching (RSM), which casts alignment as value-guided score matching. This view isolates key design choices - value guidance estimation and timestep-wise optimization strength - clarifying tradeoffs and enabling simpler, more efficient variants across differentiable and black-box tasks.
+        </p>
+      </td>
+    </tr>
+
+
+
+
+
+			  
     <tr onmouseout="itoc_stop()" onmouseover="itoc_start()">
       <td style="padding:16px;width:20%;vertical-align:middle">
         <div class="one">
@@ -380,6 +300,134 @@
     </tr>
 
 
+
+
+
+
+<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+              <tr>
+              <td style="padding:-4px;width:100%;vertical-align:middle">
+                <h4>Generative models for chemistry.</h4>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+
+
+
+
+		  
+    <tr onmouseout="ldmol_stop()" onmouseover="ldmol_start()">
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='ldmol_image'>
+					  <img src='images/ldmol.png' width=100%>
+					</div>
+          <img src='images/ldmol.png' width=100%>
+        </div>
+        <script type="text/javascript">
+          function ldmol_start() {
+            document.getElementById('ldmol_image').style.opacity = "1";
+          }
+
+          function ldmol_stop() {
+            document.getElementById('ldmol_image').style.opacity = "0";
+          }
+          ldmol_stop()
+        </script>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+			<span class="papertitle">LDMol: Text-Conditioned Molecule Diffusion Model Leveraging Chemically Informative Latent Space
+</span>
+        <br>
+				<strong>Jinho Chang</strong>*, Jong Chul Ye
+				<br>
+        <em>ICML</em>, 2025
+        <a href="https://arxiv.org/abs/2405.17829">Link</a>
+        <p></p>
+        <p>
+				We present a new latent diffusion model LDMol for molecule generation with complex conditions like natural texts. Leveraging a chemically informative latent space obtained with contrastive learning, LDMol not only outperforms previous text-to-molecule generative models, but can also be applied to downstream tasks like retrieval and molecule editing.
+        </p>
+      </td>
+    </tr>
+
+
+
+		  
+    <tr onmouseout="spmm_stop()" onmouseover="spmm_start()">
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='spmm_image'>
+					  <img src='images/spmm.png' width=100%>
+					</div>
+          <img src='images/spmm.png' width=100%>
+        </div>
+        <script type="text/javascript">
+          function spmm_start() {
+            document.getElementById('spmm_image').style.opacity = "1";
+          }
+
+          function spmm_stop() {
+            document.getElementById('spmm_image').style.opacity = "0";
+          }
+          spmm_stop()
+        </script>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+			<span class="papertitle">Bidirectional Generation of Structure and Properties Through a Single Molecular Foundation Model
+</span>
+        <br>
+				<strong>Jinho Chang</strong>*, Jong Chul Ye
+
+        <br>
+        <em>Nature Communications</em>, 2024
+        <a href="https://www.nature.com/articles/s41467-024-46440-3">Link</a>
+        <p></p>
+        <p>
+				We introduce a multimodal molecular pre-trained model that integrates molecular structures and their biochemical properties, which enables various multimodal and unimodal tasks like conditional molecule generation, property prediction, molecule classification, and reaction prediction.
+        </p>
+      </td>
+    </tr>
+
+
+
+
+    <tr onmouseout="deepdl_stop()" onmouseover="deepdl_start()">
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='deepdl_image'>
+					  <img src='images/deepdl.png' width=100%>
+					</div>
+          <img src='images/deepdl.png' width=100%>
+        </div>
+        <script type="text/javascript">
+          function deepdl_start() {
+            document.getElementById('deepdl_image').style.opacity = "1";
+          }
+
+          function deepdl_stop() {
+            document.getElementById('deepdl_image').style.opacity = "0";
+          }
+          deepdl_stop()
+        </script>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+          <span class="papertitle">Drug-likeness Scoring Based on Unsupervised Learning
+</span>
+        <br>
+				Kyunghoon Lee*, <strong>Jinho Chang</strong>*, Seonghwan Seo*, and Woo Youn Kim	
+        <br>
+        <em>Chemical Science</em>, 2022
+        <a href="https://pubs.rsc.org/en/content/articlehtml/2022/sc/d1sc05248a">Link</a>
+        <p></p>
+        <p>
+        We proposed a novel unsupervised learning model that could quantify the drug-likeness of a given molecule, by adopting a language model trained via unsupervised learning. Our model showed more consistent performance across different datasets and gave more reasonable scores.
+        </p>
+      </td>
+    </tr>
+
+			  
 
 
 <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
