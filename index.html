@@ -64,6 +64,13 @@
 
 
 
+
+
+
+
+
+
+
 			  
         
 
@@ -78,7 +85,40 @@
 
 
 			  
+    <tr onmouseout="zenova_stop()" onmouseover="zenova_start()">
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='zenova_image'>
+					  <img src='images/zenova.png' width=100%>
+					</div>
+          <img src='images/zenova.png' width=100%>
+        </div>
+        <script type="text/javascript">
+          function zenova_start() {
+            document.getElementById('zenova_image').style.opacity = "1";
+          }
 
+          function zenova_stop() {
+            document.getElementById('zenova_image').style.opacity = "0";
+          }
+          zenova_stop()
+        </script>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+			<span class="papertitle">Manifold-Constrained Initial Noise Optimization for Efficient Generative Model Alignment
+</span>
+        <br>
+				<strong>Jinho Chang</strong>, Jong Chul Ye
+				<br>
+        <em>In Review</em>, 2026
+        <a href="https://arxiv.org/abs/2610.00365">Link</a>
+        <p></p>
+        <p>
+				We address existing algorithms’ major challenge in black-box scenarios and introduce ZeNOVA through annealed soft-value guidance, manifold-constrained hyperspherical Langevin dynamics, and Metropolis-Hastings jumping. Experiments on image and video generative models show that ZeNOVA optimizes the initial noise toward higher rewards substantially more stably while exploiting the geometry of the Gaussian prior.
+        </p>
+      </td>
+    </tr>
+    
 
     <tr onmouseout="rsm_stop()" onmouseover="rsm_start()">
       <td style="padding:16px;width:20%;vertical-align:middle">
