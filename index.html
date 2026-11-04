@@ -201,7 +201,7 @@
         <a href="https://arxiv.org/abs/2610.00365">Link</a>
         <p></p>
         <p>
-				We address existing algorithms’ major challenge in black-box scenarios and introduce ZeNOVA through annealed soft-value guidance, manifold-constrained hyperspherical Langevin dynamics, and Metropolis-Hastings jumping. Experiments on image and video generative models show that ZeNOVA optimizes the initial noise toward higher rewards substantially more stably while exploiting the geometry of the Gaussian prior.
+				Optimizes diffusion/flow initial noise for black-box rewards using soft-value guidance and manifold-constrained Langevin and Metropolis–Hastings updates.
         </p>
       </td>
     </tr>
@@ -236,7 +236,7 @@
         <a href="https://arxiv.org/abs/2604.17415">Link</a>
         <p></p>
         <p>
-				We unify reward-based fine-tuning methods for diffusion and flow models under reward score matching (RSM), which casts alignment as value-guided score matching. This view isolates key design choices - value guidance estimation and timestep-wise optimization strength - clarifying tradeoffs and enabling simpler, more efficient variants across differentiable and black-box tasks.
+				Unifies reward-aligned fine-tuning as value-guided score matching, clarifying estimation and optimization tradeoffs for differentiable and black-box rewards.
         </p>
       </td>
     </tr>
@@ -275,7 +275,7 @@
         <a href="https://www.arxiv.org/abs/2509.25845">Link</a>
         <p></p>
         <p>
-				Prior reward-guided sampling methods in diffusion/flow-matching largely focused on the generation task and remain underexplored for image editing. We propose a training-free editing framework that casts the reward-guided editing as a trajectory optimal control problem, and iteratively updates adjoint states to steer the trajectory endpoint into a reward-optimized output. Our method surpasses inversion-based training-free guidance baselines across diverse editing tasks, achieving stronger rewards with higher source image fidelity without reward hacking.
+				Formulates reward-guided editing as trajectory optimal control, improving reward without sacrificing source-image fidelity.
         </p>
       </td>
     </tr>
@@ -314,7 +314,7 @@
         <a href="https://arxiv.org/abs/2411.17077">Link</a>
         <p></p>
         <p>
-				We point out the drawback of naively negating the Classifier-Free Guidance (CFG) term, and propose a novel approach to enhance negative CFG in conditional diffusion models using contrastive loss. By aligning or repelling the denoising direction based on the given condition, our method overcomes the distortions caused by traditional negative CFG, achieving superior sample quality and effective removal of unwanted features across various scenarios.
+				Introduces contrastive guidance for negative concepts, improving unwanted-feature removal while preserving image quality.
         </p>
       </td>
     </tr>
@@ -354,7 +354,7 @@
         <a href="https://arxiv.org/abs/2305.11490">Link</a>
         <p></p>
         <p>
-        Taking inspiration from previous work on the transformer and VQ-GAN combination for bidirectional image and text generation, we developed a method for instruction-tuning a text-only LLM to gain vision-language capabilities for medical images. We let LLM understand tokenized visual inputs by instructing it to answer questions about image inputs and generate image outputs.
+        Instruction-tunes a language model to understand and generate chest X-ray images using visual tokens.
         </p>
       </td>
     </tr>
@@ -393,7 +393,7 @@
         <a href="https://arxiv.org/abs/2403.12002">Link</a>
         <p></p>
         <p>
-          We present a score distillation sampling for video editing to circumvent the standard reverse diffusion process. We propose to match the space-time self-similarities during the score distillation, demonstrating its superiority in altering appearances while accurately preserving the original structure and motion.
+          Uses space-time self-similarity score distillation for video editing while preserving motion and scene structure.
         </p>
       </td>
     </tr>
@@ -483,7 +483,7 @@
         <a href="https://arxiv.org/abs/2405.17829">Link</a>
         <p></p>
         <p>
-				We present a new latent diffusion model LDMol for molecule generation with complex conditions like natural texts. Leveraging a chemically informative latent space obtained with contrastive learning, LDMol not only outperforms previous text-to-molecule generative models, but can also be applied to downstream tasks like retrieval and molecule editing.
+				Introduces text-conditioned molecular diffusion with a chemically informative contrastive latent space; supports generation, retrieval, and molecular editing.
         </p>
       </td>
     </tr>
@@ -521,7 +521,7 @@
         <a href="https://www.nature.com/articles/s41467-024-46440-3">Link</a>
         <p></p>
         <p>
-				We introduce a multimodal molecular pre-trained model that integrates molecular structures and their biochemical properties, which enables various multimodal and unimodal tasks like conditional molecule generation, property prediction, molecule classification, and reaction prediction.
+				Unifies molecular structure and biochemical property representations for conditional generation, property prediction, and related molecular tasks.
         </p>
       </td>
     </tr>
@@ -558,7 +558,7 @@
         <a href="https://pubs.rsc.org/en/content/articlehtml/2022/sc/d1sc05248a">Link</a>
         <p></p>
         <p>
-        We proposed a novel unsupervised learning model that could quantify the drug-likeness of a given molecule, by adopting a language model trained via unsupervised learning. Our model showed more consistent performance across different datasets and gave more reasonable scores.
+        Develops an unsupervised language-model-based scoring method for assessing molecular drug-likeness.
         </p>
       </td>
     </tr>
